@@ -1,38 +1,238 @@
-.App {
-  text-align: center;
+/* App.css */
+body, .container {
+  font-family: 'Nanum Gothic Coding', monospace;
+  margin: 0;
+  padding: 0;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-container img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.logo-text {
   display: flex;
   flex-direction: column;
+}
+
+.logo-text h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.logo-text h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+}
+
+/* Bio */
+.bio-container {
+  margin-top: 50px;
+}
+
+.bio-container h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.bio-container p {
+  font-size: 1em;
+  font-weight: 515;
+  color: #555;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 1.5px solid #ccc;
+  margin-top: 10px;
+}
+
+.social-links {
+  margin-top: 15px;
+  font-weight: 515;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #555;
+  transition: font-size 0.5s ease, font-weight 0.5s ease;
+  padding-bottom: 2px;
+}
+
+.social-links a:hover {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.social-links .separator {
+  margin: 0 5px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Experience */
+.experience-container {
+  margin-top: 50px; /* Add margin top for spacing */
+}
+
+.experience-line {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.experience-row {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.experience-row p {
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.experience-space {
+  margin-right: 10px; 
+}
+
+.experience-more-space {
+  margin-right: 30px; 
+}
+
+.experience-pulse {
+  width: 10px;
+  height: 10px;
+  background-color: #4CAF50; /* Green color */
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 1.5s infinite; /* Pulsing animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
+
+/* selected-work*/
+.selected-work-container{
+max-width: 100%;
+}
+
+
+.passion-projects-container {
+  margin-top: 30px; /* Adjust the margin-top as needed */
+  margin-bottom: 30px; /* Adjust the margin-bottom as needed */
+}
+
+/* Line above Social Links Container */
+.line {
+  width: 100%;
+  border-top: 1.5px solid #ccc;
+  margin-top: 15px; /* Adjust the margin-top for spacing */
+}
+
+.social-links-container {
+  margin-top: 50px; /* Adjust the margin-top for spacing */
+}
+
+a {
+  color: black; /* Set link color to black */
+}
+
+.icon-spacing {
+  display: inline-block;
+  width: 10px; /* Adjust the width for the desired spacing */
+}
+
+/* Media Queries for Smaller Screens */
+@media screen and (max-width: 600px) {
+  body, .container {
+    padding-left: 30px; /* Adjust padding for even smaller screens */
+    padding-right: 30px; /* Adjust padding for even smaller screens */
+  }
+
+  .logo-container img {
+    width: 60px; /* Adjust logo size for smaller screens */
+    height: 60px; /* Adjust logo size for smaller screens */
+    margin-right: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .logo-text h1 {
+    font-size: 1em; /* Adjust font size for smaller screens */
+    margin-bottom: 3px; /* Adjust margin for smaller screens */
+  }
+
+  .logo-text h2 {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  .bio-container h1 {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+    margin-bottom: 8px; /* Adjust margin for smaller screens */
+  }
+
+  .social-links a {
+    font-size: 0.9em; /* Adjust font size for smaller screens */
+  }
+
+  .experience-container {
+    margin-top: 20px;
+  }
+
+  .experience-row p {
+    margin-right: 5px;
+  }
+
+
+  .footer {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+}
+
+
+
+
+
+
