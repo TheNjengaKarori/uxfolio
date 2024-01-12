@@ -1,5 +1,6 @@
 /* App.css */
-body, .container {
+body,
+.container {
   font-family: 'Nanum Gothic Coding', monospace;
   margin: 0;
   padding: 0;
@@ -14,6 +15,7 @@ body, .container {
   padding: 20px;
 }
 
+/* Logo */
 .logo-container {
   display: flex;
   align-items: center;
@@ -67,19 +69,21 @@ body, .container {
   margin-bottom: 15px;
 }
 
+/* Line above Social Links Container */
 .line {
   width: 100%;
-  border-bottom: 1.5px solid #ccc;
-  margin-top: 10px;
+  border-top: 1.5px solid #ccc;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.social-links {
-  margin-top: 15px;
-  font-weight: 515;
+.social-links-container {
+  margin-top: 50px; /* Adjust the margin-top for spacing */
 }
 
 .social-links a {
   text-decoration: none;
+  font-size: 1em;
   color: #555;
   transition: font-size 0.5s ease, font-weight 0.5s ease;
   padding-bottom: 2px;
@@ -98,13 +102,26 @@ body, .container {
   background-color: #000;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-left: 10px;
 }
 
 /* Experience */
 .experience-container {
-  margin-top: 50px; /* Add margin top for spacing */
+  margin-top: 50px;
+  color: #333;
+}
+
+.experience-details{
+  font-size: 1em;
+  font-weight: 515;
+  color: #555;
+}
+
+.experience-dates{
+  font-size: 1em;
+  font-weight: 515;
+  color: black;
 }
 
 .experience-line {
@@ -121,15 +138,19 @@ body, .container {
 
 .experience-row p {
   margin-right: 10px;
+  color: #333;
 }
 
-.experience-space {
-  margin-right: 10px; 
+.experience-details-space{
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
+.experience-space,
 .experience-more-space {
-  margin-right: 30px; 
+  margin-right: 30px;
 }
+
 
 .experience-pulse {
   width: 10px;
@@ -152,66 +173,109 @@ body, .container {
   }
 }
 
-/* selected-work*/
-.selected-work-container{
-max-width: 100%;
+/* Selected Work */
+.selected-work-container {
+  max-width: 100%;
+  color: #333;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Adjust the gap between grid items as needed */
+}
 
+/* Grid Item */
+.grid-item {
+  background-color: white; /* Add a background color or customize as needed */
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.small-container {
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  bottom: 10px; /* Adjust bottom position as needed */
+  left: 10px; /* Adjust left position as needed */
+  background-color: #ccc; /* Set background color to grey */
+}
+
+.description {
+  font-size: 0.9em; /* Adjust the font size as needed */
+  color: #555; /* Set the color for the description text */
+  margin-top: 10px; /* Add margin top for spacing */
+}
+
+/* Label Box in Grid Item */
+.label-box {
+  margin-top: 15px; /* Adjust margin top for spacing */
+}
+
+.label {
+  display: inline-block;
+  background-color: #555; /* Set background color for labels */
+  color: #fff; /* Set text color for labels */
+  padding: 5px 10px;
+  margin-right: 10px; /* Adjust margin right for spacing between labels */
+  border-radius: 4px;
+}
+
+/* Passion Projects */
 .passion-projects-container {
+  color: #333;
   margin-top: 30px; /* Adjust the margin-top as needed */
   margin-bottom: 30px; /* Adjust the margin-bottom as needed */
 }
 
-/* Line above Social Links Container */
-.line {
-  width: 100%;
-  border-top: 1.5px solid #ccc;
-  margin-top: 15px; /* Adjust the margin-top for spacing */
-}
-
-.social-links-container {
-  margin-top: 50px; /* Adjust the margin-top for spacing */
-}
-
 a {
-  color: black; /* Set link color to black */
+  color: black;
+  margin-right: 10px;
 }
 
-.icon-spacing {
-  display: inline-block;
-  width: 10px; /* Adjust the width for the desired spacing */
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  text-align: center;
 }
 
 /* Media Queries for Smaller Screens */
 @media screen and (max-width: 600px) {
-  body, .container {
-    padding-left: 30px; /* Adjust padding for even smaller screens */
-    padding-right: 30px; /* Adjust padding for even smaller screens */
+  body,
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .logo-container img {
-    width: 60px; /* Adjust logo size for smaller screens */
-    height: 60px; /* Adjust logo size for smaller screens */
-    margin-right: 10px; /* Adjust margin for smaller screens */
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
   }
 
   .logo-text h1 {
-    font-size: 1em; /* Adjust font size for smaller screens */
-    margin-bottom: 3px; /* Adjust margin for smaller screens */
+    font-size: 1em;
+    margin-bottom: 3px;
   }
 
   .logo-text h2 {
-    font-size: 1em; /* Adjust font size for smaller screens */
+    font-size: 1em;
   }
 
   .bio-container h1 {
-    font-size: 1.5em; /* Adjust font size for smaller screens */
-    margin-bottom: 8px; /* Adjust margin for smaller screens */
+    font-size: 1.5em;
+    margin-bottom: 8px;
   }
 
   .social-links a {
-    font-size: 0.9em; /* Adjust font size for smaller screens */
+    font-size: 0.9em;
   }
 
   .experience-container {
@@ -222,17 +286,18 @@ a {
     margin-right: 5px;
   }
 
+  .grid-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .grid-item {
+    margin-bottom: 20px;
+  }
+
 
   .footer {
     position: relative;
     left: 0;
     right: 0;
   }
-
 }
-
-
-
-
-
-

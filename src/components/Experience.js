@@ -7,8 +7,25 @@ const Experience = () => {
     <div className="experience-container">
       <h1>experience.</h1>
       <div className="experience-details">
-        <p><strong>2021 - Current</strong></p>
-        <p><strong>UI/UX Designer</strong> @ Company A</p>
+        <p className="experience-dates">feb 2020 - Current</p>
+        <p className="experience-title">UI/UX Designer @ Devient</p>
+        <div className="experience-details-space"></div>
+        <p className="experience-dates">sep 2022 - oct 2023</p>
+        <p className="experience-title">UI/UX Designer @ Xtranet communications Ltd</p>
+        <div className="experience-details-space"></div>
+        <p className="experience-dates">oct 2022 - sep 2023</p>
+        <p className="experience-title">UI/UX Designer @ Uamuzi</p>
+        <div className="experience-details-space"></div>
+        <p className="experience-dates">feb 2023 - sep 2023</p>
+        <p className="experience-title">UI Designer @ Fuelytic </p>
+        <div className="experience-details-space"></div>
+        <p className="experience-dates">mar 2023 - apr 2023</p>
+        <p className="experience-title">UI Designer @ Tizisha</p>
+        <div className="experience-details-space"></div>
+        <p className="experience-dates">mar 2022 - jun 2022</p>
+        <p className="experience-title">
+Frontend Developer and UI/Ux Designer @ Swiftride </p>
+
         <div className="experience-line"></div>
         <div className="experience-row">
           <p>Download Resume</p>

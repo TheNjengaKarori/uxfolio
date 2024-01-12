@@ -7,8 +7,7 @@ const Bio = () => {
     <div className="bio-container">
       <h1>bio.</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      I'm a UX/UI and Product Designer with 3 years of experience in creating and scaling user-centric designs. I'm passionate about blending innovative design with strategic user research to deliver exceptional user experiences.     </p>
       <div className="line"></div>
       <div className="social-links">
         <a href="https://www.linkedin.com/in/njenga-karori-2b9bb6223/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
