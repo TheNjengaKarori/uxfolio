@@ -4,9 +4,9 @@ body,
   font-family: 'Nanum Gothic Coding', monospace;
   margin: 0;
   padding: 0;
-  padding-left: 250px;
-  padding-right: 250px;
-  padding-top: 100px;
+  padding-left: 163px;
+  padding-right: 163px;
+  padding-top: 50px;
 }
 
 .container {
@@ -22,10 +22,10 @@ body,
 }
 
 .logo-container img {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 15px;
 }
 
 .logo-text {
@@ -34,15 +34,15 @@ body,
 }
 
 .logo-text h1 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   color: #333;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .logo-text h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 500;
   color: #555;
   margin: 0;
@@ -54,31 +54,31 @@ body,
 }
 
 .bio-container h1 {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
   color: #333;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-.bio-container p {
-  font-size: 1em;
-  font-weight: 515;
+.bio-container h2 {
+  font-size: 2.5em;
+  font-weight: bold;
   color: #555;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 /* Line above Social Links Container */
 .line {
   width: 100%;
   border-top: 1.5px solid #ccc;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .social-links-container {
-  margin-top: 50px; /* Adjust the margin-top for spacing */
+  margin-top: 30px;
 }
 
 .social-links a {
@@ -102,8 +102,8 @@ body,
   background-color: #000;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20px;
-  margin-left: 10px;
+  margin-right: 15px;
+  margin-left: 5px;
 }
 
 /* Experience */
@@ -112,13 +112,13 @@ body,
   color: #333;
 }
 
-.experience-details{
+.experience-details {
   font-size: 1em;
   font-weight: 515;
   color: #555;
 }
 
-.experience-dates{
+.experience-dates {
   font-size: 1em;
   font-weight: 515;
   color: black;
@@ -134,21 +134,48 @@ body,
   display: flex;
   align-items: center;
   margin-top: 10px;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
 }
 
 .experience-row p {
   margin-right: 10px;
   color: #333;
+  font-weight: 100;
+  margin: 0;
 }
 
-.experience-details-space{
+.experience-details-space {
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
 .experience-space,
 .experience-more-space {
-  margin-right: 30px;
+  margin-right: 50px;
+  font-size: 1em;
+
+}
+
+a.experience-link {
+  text-decoration: none;
+  color: #555;
+  transition: font-size 0.5s ease, font-weight 0.5s ease;
+  padding-bottom: 2px;
+  font-weight: normal;
+}
+
+a.experience-link:hover {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.experience-remote{
+  margin-left: 100px;
+}
+
+/* Adjust the size and color of Ionicons */
+i.ion {
+  font-size: 24px;
 }
 
 
@@ -175,13 +202,14 @@ body,
 
 /* Selected Work */
 .selected-work-container {
+  margin-top: 50px;
   max-width: 100%;
   color: #333;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* Change to a single column for smaller screens */
   gap: 20px; /* Adjust the gap between grid items as needed */
 }
 
@@ -194,12 +222,10 @@ body,
 }
 
 .small-container {
-  position: absolute;
-  top: 10px; /* Adjust top position as needed */
-  right: 10px; /* Adjust right position as needed */
-  bottom: 10px; /* Adjust bottom position as needed */
-  left: 10px; /* Adjust left position as needed */
+  position: relative;
+  width: 100%;
   background-color: #ccc; /* Set background color to grey */
+  margin-bottom: 20px; /* Add margin at the bottom of each grid item for spacing */
 }
 
 .description {
@@ -225,7 +251,7 @@ body,
 /* Passion Projects */
 .passion-projects-container {
   color: #333;
-  margin-top: 30px; /* Adjust the margin-top as needed */
+  margin-top: 50px; /* Adjust the margin-top as needed */
   margin-bottom: 30px; /* Adjust the margin-bottom as needed */
 }
 
@@ -234,29 +260,17 @@ a {
   margin-right: 10px;
 }
 
-/* Footer */
-.footer {
-  background-color: black;
-  color: white;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding: 15px;
-  text-align: center;
-}
-
 /* Media Queries for Smaller Screens */
 @media screen and (max-width: 600px) {
   body,
   .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .logo-container img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
   }
 
@@ -269,9 +283,18 @@ a {
     font-size: 1em;
   }
 
+  .bio-container {
+    margin-top: 30px;
+  }
+
   .bio-container h1 {
-    font-size: 1.5em;
-    margin-bottom: 8px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .bio-container h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
   }
 
   .social-links a {
@@ -279,21 +302,25 @@ a {
   }
 
   .experience-container {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .experience-row p {
-    margin-right: 5px;
+    margin-right: 2px; /* Adjust margin for smaller screens */
+  }
+
+  .experience-space,
+  .experience-more-space {
+    font-size: 0.8em; /* Adjust font size for smaller screens */
   }
 
   .grid-container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr; /* Change to a single column for smaller screens */
   }
 
   .grid-item {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add margin at the bottom of each grid item for spacing */
   }
-
 
   .footer {
     position: relative;

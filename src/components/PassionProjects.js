@@ -17,6 +17,11 @@ const PassionProjects = () => {
         <a href="https://twitter.com/NjengaKarori" target="_blank" rel="noopener noreferrer" className="social-icon">
           <i className="fab fa-twitter fa-lg"></i>
         </a>
+        <span className="icon-spacing"></span> 
+      
+        <a href="https://www.behance.net/njengakarori" target="_blank" rel="noopener noreferrer" className="social-icon">
+          <i className="fab fa-behance fa-lg"></i>
+        </a>
       </div>
     </div>
   );

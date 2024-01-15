@@ -16,7 +16,7 @@ const Logo = () => {
     // Set interval to change logo every 5 seconds (adjust as needed)
     const interval = setInterval(() => {
       setLogoIndex((prevIndex) => (prevIndex + 1) % logos.length);
-    }, 1500);
+    }, 2000);
 
     // Clear interval on component unmount to avoid memory leaks
     return () => clearInterval(interval);
