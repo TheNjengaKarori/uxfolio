@@ -211,14 +211,27 @@ i.ion {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Change to a single column for smaller screens */
   gap: 20px; /* Adjust the gap between grid items as needed */
+  
 }
 
 /* Grid Item */
 .grid-item {
-  background-color: white; /* Add a background color or customize as needed */
+  text-decoration: none;
+  background-color: white;
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #ccc;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.grid-item img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.grid-item:hover {
+  box-shadow: 0 0 10px rgba(139, 139, 139, 0.3); 
 }
 
 .small-container {
@@ -241,11 +254,14 @@ i.ion {
 
 .label {
   display: inline-block;
-  background-color: #555; /* Set background color for labels */
-  color: #fff; /* Set text color for labels */
+  background-color: white; /* Set background color for labels */
+  color: black; /* Set text color for labels */
   padding: 5px 10px;
   margin-right: 10px; /* Adjust margin right for spacing between labels */
-  border-radius: 4px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 /* Passion Projects */
@@ -322,9 +338,5 @@ a {
     margin-bottom: 20px; /* Add margin at the bottom of each grid item for spacing */
   }
 
-  .footer {
-    position: relative;
-    left: 0;
-    right: 0;
-  }
+  
 }
