@@ -30,11 +30,15 @@ const Experience = () => {
 
         <div className="experience-line"></div>
         <div className="experience-row">
-          <a href="#" className="experience-link" title="Download Resume">Download Resume</a>
+          <a href="#" className="experience-link" title="Download Resume">Download Resume
           <i class="material-icons-outlined">file_download</i>
+          </a>
+          
           <div className="experience-space"></div>
-          <a href="#" className="experience-link" title="Get in Touch">Get in Touch</a>
+          <a href="#" className="experience-link" title="Get in Touch">Get in Touch
           <i class="material-icons-outlined">email</i>
+          </a>
+          
           <div className="experience-more-space"></div>
           <p className="experience-remote"><strong>Available for remote</strong> <div className="experience-pulse"></div></p>
           

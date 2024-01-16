@@ -9,8 +9,8 @@ const PassionProjects = () => {
       <p>Exploring creativity and innovation through exciting personal projects.</p>
       <div className="grid-container">
       <a href="https://uxideas.vercel.app/" target="_blank" rel="noopener noreferrer" className="grid-item">
-        <img src={require('../res/uxideas.png')} alt="Grid One Image" />
-          <p className="description">This is a short description for Grid One.</p>
+        <img src={require('../res/uxideas.png')} alt="UI?UX Ideas" />
+          <p className="description">This web app provides ui/ux ideas to designers.</p>
           <div className="label-box">
             <span className="label">Design inspiration</span>
             <span className="label">Design resources</span>
@@ -18,7 +18,7 @@ const PassionProjects = () => {
           </div>
         </a>
         <div className="grid-item">
-          <img src="path/to/your/image2.jpg" alt="Grid Two Image" />
+          <img src={require('../res/uxideas.png')} alt="UI?UX Ideas" />
           <p className="description">This is a short description for Grid Two.</p>
           <div className="label-box">
             <span className="label">Label One</span>
